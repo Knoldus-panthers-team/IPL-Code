@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <Div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <Table>
+                  <tr>
+                      <th>Name</th>
+                      <td><input type="text" onkeypress="return allowOnlyLetters(event,this);"></td>
+                  </tr>
+              </Table>  
+          </div>
+        </div>
+        
+      </div>
+        
+    
+      
+  
+    </Div>	
+
+
+
+  </body>
+  
+
+  <script>
+    
+    
+        function allowOnlyLetters(e, t)   
+            {    
+                if (window.event)    
+                {    
+                    var charCode = window.event.keyCode;    
+                }    
+                else if (e)   
+                {    
+                    var charCode = e.which;    
+                }    
+                else
+                 {
+                    return true;
+                  
+                  }    
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123)|| (charCode==32))    
+                    return true;    
+                else  
+                {    
+                    alert("Please enter only alphabets");    
+                    return false;    
+                }           
+            }      
+</script> 
+</script>
+
+</html>

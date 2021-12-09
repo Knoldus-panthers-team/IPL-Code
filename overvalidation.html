@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <Div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <Table>
+                  <tr>
+                      <th>textbox1</th>
+                      <td><input type="text" id="textbox1" onchange="check()" ></td>
+                  </tr>
+              </Table>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          <Table>
+              <tr>
+                  <th>textbox2</th>
+                  <td><input id="textbox2" type="text" onchange="check()"></td>
+              </tr>
+          </Table>
+          </div>
+      </div>
+      <div>
+        <button  id="btn">check</button>
+      </div>
+  
+    </Div>	
+
+
+
+  </body>
+  
+
+  <script>
+ 
+function check() {
+    
+    
+    var str1 = $("#textbox1").val();
+    var str2 = $("#textbox2").val();
+
+    
+  console.log(str1); // get value
+  console.log(str2);
+  
+  if(str1>20|| str2>20)
+  {
+    alert("over cant be more than 20...");
+        document.getElementById("btn").disabled = true;
+  }
+ 
+  else
+  {
+    document.getElementById("btn").disabled = false;
+  }
+
+
+  
+}
+
+
+
+        
+
+
+
+</script>
+
+</html>
